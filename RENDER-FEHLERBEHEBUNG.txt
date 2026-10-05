@@ -1,0 +1,22 @@
+RENDER FIX – No module named backend
+
+1. Auf GitHub muss im Hauptverzeichnis stehen:
+   render.yaml
+   server.py
+   requirements.txt
+   backend/
+
+2. Öffne auf GitHub den Ordner backend. Darin müssen u.a. diese Dateien sichtbar sein:
+   __init__.py
+   app.py
+   providers.py
+   rules.py
+   security.py
+   store.py
+
+3. In Render beim Blueprint/Service darf bei Root Directory KEIN Unterordner wie public oder backend eingetragen sein.
+   Root Directory muss leer bzw. Repository-Root sein.
+
+4. Nach dem Aktualisieren des GitHub-Repositories in Render: Manual Deploy -> Clear build cache & deploy.
+
+Diese Version setzt zusätzlich Gunicorn --chdir und --pythonpath explizit auf /opt/render/project/src.

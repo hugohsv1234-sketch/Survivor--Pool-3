@@ -1,0 +1,18 @@
+SURVIVOR-POOL – WICHTIG FÜR GITHUB
+
+Diese Ordnerstruktur MUSS erhalten bleiben.
+
+Im Hauptverzeichnis liegen unter anderem:
+- render.yaml
+- requirements.txt
+- server.py
+- backend/   (ORDNER)
+- public/    (ORDNER)
+- tests/     (ORDNER)
+- docs/      (ORDNER)
+
+WICHTIG:
+Nicht die Dateien aus backend/, public/, tests/ oder docs/ einzeln ins GitHub-Hauptverzeichnis ziehen.
+
+Nach dem Upload muss GitHub auf der ersten Seite den Ordner "backend" anzeigen.
+Wenn du backend anklickst, müssen dort __init__.py, app.py, providers.py, rules.py, security.py und store.py stehen.

@@ -1,0 +1,12 @@
+data/
+__pycache__/
+*.pyc
+.env
+.venv/
+node_modules/
+.sites-runtime/
+tests/snapshot.json
+
+# Python cache
+__pycache__/
+*.py[cod]
